@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Vote Eligibility</title>
+</head>
+<body>
+<h1>Check Vote Eligibility</h1>
+<hr>
+
+<form>
+    Enter age:
+    <label>
+        <input id="age" type="text" placeholder="age..." value="age">
+        <br><br>
+        <button type="button" onclick="checkAge()">Check Vote Eligibility</button>
+    </label>
+    <br><br>
+    Status: <p id="text"></p>
+</form>
+
+<hr>
+
+<script>
+    function checkAge() {
+        let age = document.getElementById("age").value;
+        let text;
+
+        if (isNaN(age)||age >=100) {
+            text = "Please check your input.";
+        } else if (age >= 18) {
+            text = "Eligible";
+        } else {
+            text = "Not Eligible";
+        }
+        document.getElementById("text").innerHTML=text;
+    }
+</script>
+
+</body>
+</html>

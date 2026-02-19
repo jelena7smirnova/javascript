@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smile</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        #wrapper {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 50px auto;
+            background-color: yellow;
+            border-radius: 50%;
+            border: 3px solid #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .eye1, .eye2 {
+            position: absolute;
+            width: 37px;
+            height: 37px;
+            background-color: #26df13;
+            border-radius: 50px;
+            border: 5px solid #fff;
+        }
+
+        .pupil1, .pupil2 {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #000000;
+            border-radius: 50px;
+        }
+
+        .pupil2 {
+            top: 15px;
+            left: 10px;
+        }
+
+        .pupil1 {
+            top: 15px;
+            right: 10px;
+        }
+
+        .eye1 {
+            top: 45px;
+            left: 45px;
+        }
+
+        .eye2 {
+            top: 45px;
+            right: 45px;
+        }
+
+        .nose {
+            width: 50px;
+            height: 25px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            border: 2px solid #000;
+        }
+
+        .mouth1 {
+            position: absolute;
+            width: 80px;
+            height: 50px;
+            border-bottom: 8px solid #d50aed;
+            border-radius: 0 0 100px 100px;
+            top: 120px;
+            left: 100px;
+            transform: translateX(-50%);
+        }
+
+    </style>
+</head>
+<body>
+<h1>CSS pozicionēšana</h1>
+<h2>Jeļena Mackeviča 8.uzdevums</h2>
+<div id="wrapper">
+    <div class="eye1">
+        <div class="pupil1">
+        </div>
+    </div>
+    <div class="eye2">
+        <div class="pupil2">
+        </div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth1"></div>
+</div>
+</body>
+</html>
