@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Reģistrācija - Mans rotaļlietu veikals</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-image: url("images/5208229.jpg");
+            color: #175949;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        table {
+            background-color: #ffffff;
+            border: 2px solid #175949;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            border-collapse: collapse;
+
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eaf4f2;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #a8c7bd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #175949;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h2>Izveido jaunu profilu</h2>
+
+<form action="registration.html" method="post">
+    <table>
+        <tr>
+            <td colspan="2"><b>Reģistrācijas informācija</b></td>
+        </tr>
+
+        <tr>
+            <td>Lietotājvārds:</td>
+            <td><label><input type="text" name="UserName" maxlength="30" placeholder="login name" required></label></td>
+        </tr>
+
+        <tr>
+            <td>E-pasts:</td>
+            <td><label><input type="email" name="Email" maxlength="100" placeholder="username@gmail.com" required></label></td>
+        </tr>
+
+        <tr>
+            <td>Parole:</td>
+            <td>
+                <input type="password" name="Password" maxlength="64" required
+                       pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"
+                       title="Parolei jābūt vismaz 8 simboliem, jāiekļauj vismaz viens cipars un lielais burts.">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Apstiprini paroli:</td>
+            <td><label><input type="password" name="PasswordConfirm" maxlength="64" required></label></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Personīgā informācija</b></td>
+        </tr>
+
+        <tr>
+            <td>Vārds:</td>
+            <td><label><input type="text" name="FirstName" required></label></td>
+        </tr>
+
+        <tr>
+            <td>Uzvārds:</td>
+            <td><label><input type="text" name="LastName" required></label></td>
+        </tr>
+
+        <tr>
+            <td>Adrese:</td>
+            <td><label><input type="text" name="Address" required></label></td>
+        </tr>
+
+        <tr>
+            <td>Pilsēta:</td>
+            <td><label>
+                <select name="city" required>
+                    <option value="">-- Izvēlies pilsētu --</option>
+                    <option value="1">Rīga</option>
+                    <option value="2">Tallina</option>
+                    <option value="3">Ventspils</option>
+                    <option value="4">Liepāja</option>
+                </select>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pasta indekss:</td>
+            <td><label><input type="text" name="Post"></label></td>
+        </tr>
+
+        <tr>
+            <td>Telefona numurs:</td>
+            <td><input type="text" name="Phone" placeholder="+371 ..." pattern="^\+?\d{8,15}$"
+                       title="Ievadi derīgu telefona numuru"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Noteikumi</b></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <label>
+                    <input type="checkbox" name="Accept" required>
+                    Es piekrītu <a href="terms.html" target="_blank">lietošanas noteikumiem</a>.
+                </label>
+                <br><br>
+                <label>
+                    <input type="checkbox" name="News">
+                    Vēlos saņemt jaunumus un īpašos piedāvājumus e-pastā.
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Reģistrēties">
+                &nbsp;&nbsp;
+                <input type="reset" value="Attīrīt">
+                <br><br>
+                Jau ir profils? <a href="login.html">Ieiet</a>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

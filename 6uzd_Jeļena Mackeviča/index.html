@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Veikals</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url("images/5208229.jpg");
+            color: #3b2f2f;
+        }
+
+        table {
+            width: 100%;
+            border: none;
+        }
+
+        tr {
+            text-align: center;
+        }
+
+        td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .images {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            width: 100%;
+            border: 1px solid;
+            color: #74aa9c;
+            padding: 15px;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input {
+            border-radius: 4px;
+            background-color: #F5D2D2;
+        }
+
+
+        button {
+            background-color: #74aa9c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buttons{
+            width:75%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: #218b72;
+            transform: scale(1.05);
+        }
+
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: #3b2f2f;
+            width: 80%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <img class="images" src="images/logo.png" alt="Logo">
+        </td>
+        <td>
+            <p>Mans rotaļlietu veikals</p>
+        </td>
+        <td>
+            <label>
+                <input type="text" name="Search" maxlength="15" placeholder="search...">
+            </label>
+            <a href="search.html" target="main_frame">&#128269; </a>&nbsp;&nbsp;
+            <a href="registration.html" target="main_frame">&#128100;</a>&nbsp;&nbsp;
+            <a href="fav.html" target="main_frame">&#10084;</a>&nbsp;&nbsp;
+            <a href="cart.html" target="main_frame">&#128722;</a>
+        </td>
+    </tr>
+</table>
+
+<table class="buttons">
+    <tr>
+        <td>
+            <a href="fr00.html" target="main_frame">
+                <button type="button" name="myButton">Sākums</button>
+            </a>
+        </td>
+        <td>
+            <a href="fr01.html" target="main_frame">
+                <button type="button" name="myButton">Mazuļiem</button>
+            </a>
+        </td>
+        <td>
+            <a href="fr02.html" target="main_frame">
+                <button type="button" name="myButton">Zīmoli</button>
+            </a>
+        </td>
+        <td>
+            <a href="fr03.html" target="main_frame">
+                <button type="button" name="myButton">Atlaides</button>
+            </a>
+        </td>
+        <td>
+            <a href="fr04.html" target="main_frame">
+                <button type="button" name="myButton">Par mums</button>
+            </a>
+        </td>
+    </tr>
+</table>
+<br><br>
+<iframe name="main_frame" src="fr00.html">
+</iframe>
+</body>
+</html>
